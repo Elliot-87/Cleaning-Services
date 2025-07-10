@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteClean | Premium Cleaning Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    .service-card {
+        opacity: 1;
+        max-height: 1000px;
+        transition: opacity 0.5s ease, max-height 0.8s ease, transform 0.3s ease;
+    }
+    
+    .hidden.service-card {
+        opacity: 0;
+        max-height: 0;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    .learn-more-content {
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+}
+
+/* Smooth hover effect for cards */
+.bg-white {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bg-white:hover {
+    transform: translateY(-5px);
+}
+</style>
+</head>
+<body class="font-sans bg-gray-50">
+    <section id="services" class="relative py-20 bg-white">
+    <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
+    <div class="container mx-auto px-6 relative z-10">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Our Cleaning Services</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Comprehensive cleaning solutions tailored to your specific needs</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service Card 1 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-home text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Residential Cleaning</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Complete home cleaning including living areas, bedrooms, kitchens, and bathrooms.</p>
+                    
+                    <!-- Learn More Button -->
+                    <button class="learn-more-btn text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-chevron-down ml-2 text-sm transition-transform duration-300"></i>
+                    </button>
+                    
+                    <!-- Expanded Content (hidden by default) -->
+                    <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Dusting all surfaces</li>
+                                <li>Vacuuming and mopping floors</li>
+                                <li>Bathroom sanitization</li>
+                                <li>Kitchen deep cleaning</li>
+                                <li>Bed linen changes (optional)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">From $120</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 2 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-building text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Commercial Cleaning</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Professional office cleaning services designed to maintain a healthy work environment.</p>
+                    
+                    <button class="learn-more-btn text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-chevron-down ml-2 text-sm transition-transform duration-300"></i>
+                    </button>
+                    
+                    <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Daily trash removal</li>
+                                <li>Desk and surface sanitization</li>
+                                <li>Restroom maintenance</li>
+                                <li>Floor care and vacuuming</li>
+                                <li>Window cleaning (weekly)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">Custom Pricing</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Get Quote
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Service Card 3 -->
+            <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-couch text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Carpet Cleaning</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Deep cleaning and stain removal for all types of carpets and rugs using eco-friendly solutions.</p>
+                     <button class="learn-more-btn text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-chevron-down ml-2 text-sm transition-transform duration-300"></i>
+                    </button>
+                     <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Daily trash removal</li>
+                                <li>Desk and surface sanitization</li>
+                                <li>Restroom maintenance</li>
+                                <li>Floor care and vacuuming</li>
+                                <li>Window cleaning (weekly)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">Custom Pricing</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Get Quote
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Card 4 -->
+            <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-window-restore text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Window Cleaning</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Streak-free window cleaning for both interior and exterior surfaces, including hard-to-reach areas.</p>
+                    <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                     <!-- Expanded Content (hidden by default) -->
+                    <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Dusting all surfaces</li>
+                                <li>Vacuuming and mopping floors</li>
+                                <li>Bathroom sanitization</li>
+                                <li>Kitchen deep cleaning</li>
+                                <li>Bed linen changes (optional)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">From $120</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 5 -->
+            <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-warehouse text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Industrial Cleaning</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Specialized cleaning for factories, warehouses, and industrial facilities with proper safety protocols.</p>
+                    <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                     <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Daily trash removal</li>
+                                <li>Desk and surface sanitization</li>
+                                <li>Restroom maintenance</li>
+                                <li>Floor care and vacuuming</li>
+                                <li>Window cleaning (weekly)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">Custom Pricing</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Get Quote
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 6 -->
+            <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1565538810643-b5bdb714032a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-hand-sparkles text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Deep Cleaning</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Thorough cleaning of every nook and cranny, perfect for spring cleaning or post-renovation cleanup.</p>
+                    <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                     <!-- Expanded Content (hidden by default) -->
+                    <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Dusting all surfaces</li>
+                                <li>Vacuuming and mopping floors</li>
+                                <li>Bathroom sanitization</li>
+                                <li>Kitchen deep cleaning</li>
+                                <li>Bed linen changes (optional)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">From $120</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hidden Services (9 more cards) -->
+            <!-- Service Card 7 -->
+            <div class="service-card hidden bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-home text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Move-In/Move-Out Cleaning</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Comprehensive cleaning for homes before moving in or after moving out, ensuring a fresh start.</p>
+                    <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                     <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Daily trash removal</li>
+                                <li>Desk and surface sanitization</li>
+                                <li>Restroom maintenance</li>
+                                <li>Floor care and vacuuming</li>
+                                <li>Window cleaning (weekly)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">Custom Pricing</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Get Quote
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 8 -->
+            <div class="service-card hidden bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-pump-soap text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Disinfection Services</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Professional disinfection using hospital-grade products to eliminate germs, bacteria, and viruses.</p>
+                    <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                     <!-- Expanded Content (hidden by default) -->
+                    <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Dusting all surfaces</li>
+                                <li>Vacuuming and mopping floors</li>
+                                <li>Bathroom sanitization</li>
+                                <li>Kitchen deep cleaning</li>
+                                <li>Bed linen changes (optional)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">From $120</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 9 -->
+            <div class="service-card hidden bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-utensils text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Kitchen Deep Cleaning</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Specialized cleaning for kitchens including appliances, cabinets, and hard-to-reach grease buildup.</p>
+                    <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                     <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Daily trash removal</li>
+                                <li>Desk and surface sanitization</li>
+                                <li>Restroom maintenance</li>
+                                <li>Floor care and vacuuming</li>
+                                <li>Window cleaning (weekly)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">Custom Pricing</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Get Quote
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 10 -->
+            <div class="service-card hidden bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-shower text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Bathroom Deep Cleaning</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Intensive bathroom cleaning tackling grout, tiles, fixtures, and eliminating mold and mildew.</p>
+                    <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                     <!-- Expanded Content (hidden by default) -->
+                    <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Dusting all surfaces</li>
+                                <li>Vacuuming and mopping floors</li>
+                                <li>Bathroom sanitization</li>
+                                <li>Kitchen deep cleaning</li>
+                                <li>Bed linen changes (optional)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">From $120</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 11 -->
+            <div class="service-card hidden bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-rug text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Upholstery Cleaning</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Professional cleaning for sofas, chairs, and other upholstered furniture to remove stains and odors.</p>
+                    <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                     <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Daily trash removal</li>
+                                <li>Desk and surface sanitization</li>
+                                <li>Restroom maintenance</li>
+                                <li>Floor care and vacuuming</li>
+                                <li>Window cleaning (weekly)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">Custom Pricing</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Get Quote
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 12 -->
+            <div class="service-card hidden bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-car text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Vehicle Detailing</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Complete interior and exterior cleaning for cars, trucks, and other vehicles to restore like-new condition.</p>
+                    <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                     <!-- Expanded Content (hidden by default) -->
+                    <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Dusting all surfaces</li>
+                                <li>Vacuuming and mopping floors</li>
+                                <li>Bathroom sanitization</li>
+                                <li>Kitchen deep cleaning</li>
+                                <li>Bed linen changes (optional)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">From $120</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 13 -->
+            <div class="service-card hidden bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-snowflake text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">HVAC Duct Cleaning</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Improve air quality by removing dust, allergens, and debris from your heating and cooling systems.</p>
+                    <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                     <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Daily trash removal</li>
+                                <li>Desk and surface sanitization</li>
+                                <li>Restroom maintenance</li>
+                                <li>Floor care and vacuuming</li>
+                                <li>Window cleaning (weekly)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">Custom Pricing</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Get Quote
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 14 -->
+            <div class="service-card hidden bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1513519245088-0e12902e5a38?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-broom text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Post-Construction Cleanup</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Thorough cleaning after construction or renovation projects to remove dust, debris, and construction residues.</p>
+                    <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                     <!-- Expanded Content (hidden by default) -->
+                    <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Dusting all surfaces</li>
+                                <li>Vacuuming and mopping floors</li>
+                                <li>Bathroom sanitization</li>
+                                <li>Kitchen deep cleaning</li>
+                                <li>Bed linen changes (optional)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">From $120</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 15 -->
+            <div class="service-card hidden bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-calendar-alt text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Recurring Maintenance</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Customized regular cleaning schedules to keep your space consistently clean and well-maintained.</p>
+                    <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                     <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Daily trash removal</li>
+                                <li>Desk and surface sanitization</li>
+                                <li>Restroom maintenance</li>
+                                <li>Floor care and vacuuming</li>
+                                <li>Window cleaning (weekly)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">Custom Pricing</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Get Quote
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <!-- Add more service cards following the same pattern -->
+        </div>
+        
+        <div class="text-center mt-16">
+            <button id="view-all-btn" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full text-lg font-semibold transition">
+  View All Services
+</button>
+
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    // Configuration
+    const config = {
+        viewAll: {
+            btn: document.querySelector('#services .text-center button'),
+            cards: document.querySelectorAll('.service-card'),
+            visible: false,
+            initialVisibleCount: 6
+        },
+        learnMore: {
+            btns: document.querySelectorAll('.learn-more-btn'),
+            contentClass: 'learn-more-content'
+        }
+    };
+
+    // Initialize View All functionality
+    function initViewAll() {
+        // Initially show first N cards
+        config.viewAll.cards.forEach((card, index) => {
+            if (index >= config.viewAll.initialVisibleCount) {
+                hideCard(card);
+            }
+        });
+
+        config.viewAll.btn.addEventListener('click', function() {
+            config.viewAll.visible = !config.viewAll.visible;
+            
+            if (config.viewAll.visible) {
+                // Show all cards
+                config.viewAll.cards.forEach((card, index) => {
+                    if (index >= config.viewAll.initialVisibleCount) {
+                        setTimeout(() => {
+                            showCard(card);
+                        }, 50 * (index - config.viewAll.initialVisibleCount));
+                    }
+                });
+                
+                config.viewAll.btn.textContent = 'Show Less Services';
+            } else {
+                // Hide extra cards and collapse any expanded content
+                config.viewAll.cards.forEach((card, index) => {
+                    if (index >= config.viewAll.initialVisibleCount) {
+                        collapseLearnMore(card);
+                        setTimeout(() => {
+                            hideCard(card);
+                        }, 100);
+                    }
+                });
+                
+                config.viewAll.btn.textContent = 'View All Services';
+            }
+        });
+    }
+
+    // Initialize Learn More functionality
+    function initLearnMore() {
+        config.learnMore.btns.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                
+                const card = this.closest('.bg-white');
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                // Toggle the expanded state
+                const isExpanded = content.style.maxHeight && content.style.maxHeight !== '0px';
+                
+                if (isExpanded) {
+                    collapseLearnMore(card);
+                } else {
+                    expandLearnMore(card, content, icon);
+                }
+            });
+        });
+    }
+
+    // Helper functions
+    function hideCard(card) {
+        card.classList.add('hidden');
+        card.style.opacity = '0';
+        card.style.maxHeight = '0';
+        card.style.overflow = 'hidden';
+    }
+
+    function showCard(card) {
+        card.classList.remove('hidden');
+        card.style.opacity = '1';
+        card.style.maxHeight = '1000px';
+        card.style.transition = 'opacity 0.5s ease, max-height 0.8s ease';
+    }
+
+    function collapseLearnMore(card) {
+        const content = card.querySelector(`.${config.learnMore.contentClass}`);
+        if (content) {
+            content.style.maxHeight = '0';
+            const btn = card.querySelector('.learn-more-btn');
+            if (btn) {
+                const icon = btn.querySelector('i');
+                if (icon) {
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            }
+        }
+    }
+
+    function expandLearnMore(card, content, icon) {
+        // First collapse any other expanded content in the same card group
+        const cardGroup = card.parentElement;
+        const expandedContents = cardGroup.querySelectorAll(`.${config.learnMore.contentClass}[style*="max-height:"]:not([style*="max-height: 0px"])`);
+        
+        expandedContents.forEach(expandedContent => {
+            if (expandedContent !== content) {
+                expandedContent.style.maxHeight = '0';
+                const expandedBtn = expandedContent.previousElementSibling;
+                if (expandedBtn && expandedBtn.classList.contains('learn-more-btn')) {
+                    const expandedIcon = expandedBtn.querySelector('i');
+                    expandedIcon.classList.remove('fa-chevron-up');
+                    expandedIcon.classList.add('fa-chevron-down');
+                }
+            }
+        });
+        
+        // Then expand the clicked content
+        content.style.maxHeight = content.scrollHeight + 'px';
+        icon.classList.remove('fa-chevron-down');
+        icon.classList.add('fa-chevron-up');
+        card.classList.add('shadow-xl');
+    }
+
+    // Initialize both functionalities
+    initViewAll();
+    initLearnMore();
+});
+    </script>
+</body>
+</html>
+<section id="services" class="relative py-20 bg-white">
+    <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
+    <div class="container mx-auto px-6 relative z-10">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Our Cleaning Services</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Comprehensive cleaning solutions tailored to your specific needs</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service Card 1 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-home text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Residential Cleaning</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Complete home cleaning including living areas, bedrooms, kitchens, and bathrooms.</p>
+                    
+                    <!-- Learn More Button -->
+                    <button class="learn-more-btn text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-chevron-down ml-2 text-sm transition-transform duration-300"></i>
+                    </button>
+                    
+                    <!-- Expanded Content (hidden by default) -->
+                    <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Dusting all surfaces</li>
+                                <li>Vacuuming and mopping floors</li>
+                                <li>Bathroom sanitization</li>
+                                <li>Kitchen deep cleaning</li>
+                                <li>Bed linen changes (optional)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">From $120</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 2 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-building text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Commercial Cleaning</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Professional office cleaning services designed to maintain a healthy work environment.</p>
+                    
+                    <button class="learn-more-btn text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-chevron-down ml-2 text-sm transition-transform duration-300"></i>
+                    </button>
+                    
+                    <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Daily trash removal</li>
+                                <li>Desk and surface sanitization</li>
+                                <li>Restroom maintenance</li>
+                                <li>Floor care and vacuuming</li>
+                                <li>Window cleaning (weekly)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">Custom Pricing</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Get Quote
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Service Card 3 -->
+            <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-couch text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Carpet Cleaning</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Deep cleaning and stain removal for all types of carpets and rugs using eco-friendly solutions.</p>
+                     <button class="learn-more-btn text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-chevron-down ml-2 text-sm transition-transform duration-300"></i>
+                    </button>
+                     <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Daily trash removal</li>
+                                <li>Desk and surface sanitization</li>
+                                <li>Restroom maintenance</li>
+                                <li>Floor care and vacuuming</li>
+                                <li>Window cleaning (weekly)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">Custom Pricing</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Get Quote
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Card 4 -->
+            <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-window-restore text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Window Cleaning</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Streak-free window cleaning for both interior and exterior surfaces, including hard-to-reach areas.</p>
+                    <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                     <!-- Expanded Content (hidden by default) -->
+                    <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Dusting all surfaces</li>
+                                <li>Vacuuming and mopping floors</li>
+                                <li>Bathroom sanitization</li>
+                                <li>Kitchen deep cleaning</li>
+                                <li>Bed linen changes (optional)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">From $120</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 5 -->
+            <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-warehouse text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Industrial Cleaning</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Specialized cleaning for factories, warehouses, and industrial facilities with proper safety protocols.</p>
+                    <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                     <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Daily trash removal</li>
+                                <li>Desk and surface sanitization</li>
+                                <li>Restroom maintenance</li>
+                                <li>Floor care and vacuuming</li>
+                                <li>Window cleaning (weekly)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">Custom Pricing</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Get Quote
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 6 -->
+            <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1565538810643-b5bdb714032a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-hand-sparkles text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Deep Cleaning</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Thorough cleaning of every nook and cranny, perfect for spring cleaning or post-renovation cleanup.</p>
+                    <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                     <!-- Expanded Content (hidden by default) -->
+                    <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Dusting all surfaces</li>
+                                <li>Vacuuming and mopping floors</li>
+                                <li>Bathroom sanitization</li>
+                                <li>Kitchen deep cleaning</li>
+                                <li>Bed linen changes (optional)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">From $120</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hidden Services (9 more cards) -->
+            <!-- Service Card 7 -->
+            <div class="service-card hidden bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-home text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Move-In/Move-Out Cleaning</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Comprehensive cleaning for homes before moving in or after moving out, ensuring a fresh start.</p>
+                    <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                     <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Daily trash removal</li>
+                                <li>Desk and surface sanitization</li>
+                                <li>Restroom maintenance</li>
+                                <li>Floor care and vacuuming</li>
+                                <li>Window cleaning (weekly)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">Custom Pricing</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Get Quote
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 8 -->
+            <div class="service-card hidden bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-pump-soap text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Disinfection Services</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Professional disinfection using hospital-grade products to eliminate germs, bacteria, and viruses.</p>
+                    <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                     <!-- Expanded Content (hidden by default) -->
+                    <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Dusting all surfaces</li>
+                                <li>Vacuuming and mopping floors</li>
+                                <li>Bathroom sanitization</li>
+                                <li>Kitchen deep cleaning</li>
+                                <li>Bed linen changes (optional)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">From $120</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 9 -->
+            <div class="service-card hidden bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-utensils text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Kitchen Deep Cleaning</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Specialized cleaning for kitchens including appliances, cabinets, and hard-to-reach grease buildup.</p>
+                    <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                     <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Daily trash removal</li>
+                                <li>Desk and surface sanitization</li>
+                                <li>Restroom maintenance</li>
+                                <li>Floor care and vacuuming</li>
+                                <li>Window cleaning (weekly)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">Custom Pricing</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Get Quote
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 10 -->
+            <div class="service-card hidden bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-shower text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Bathroom Deep Cleaning</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Intensive bathroom cleaning tackling grout, tiles, fixtures, and eliminating mold and mildew.</p>
+                    <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                     <!-- Expanded Content (hidden by default) -->
+                    <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Dusting all surfaces</li>
+                                <li>Vacuuming and mopping floors</li>
+                                <li>Bathroom sanitization</li>
+                                <li>Kitchen deep cleaning</li>
+                                <li>Bed linen changes (optional)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">From $120</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 11 -->
+            <div class="service-card hidden bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1600607688969-a5bfcd646154?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-rug text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Upholstery Cleaning</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Professional cleaning for sofas, chairs, and other upholstered furniture to remove stains and odors.</p>
+                    <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                     <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Daily trash removal</li>
+                                <li>Desk and surface sanitization</li>
+                                <li>Restroom maintenance</li>
+                                <li>Floor care and vacuuming</li>
+                                <li>Window cleaning (weekly)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">Custom Pricing</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Get Quote
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 12 -->
+            <div class="service-card hidden bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-car text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Vehicle Detailing</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Complete interior and exterior cleaning for cars, trucks, and other vehicles to restore like-new condition.</p>
+                    <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                     <!-- Expanded Content (hidden by default) -->
+                    <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Dusting all surfaces</li>
+                                <li>Vacuuming and mopping floors</li>
+                                <li>Bathroom sanitization</li>
+                                <li>Kitchen deep cleaning</li>
+                                <li>Bed linen changes (optional)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">From $120</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 13 -->
+            <div class="service-card hidden bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-snowflake text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">HVAC Duct Cleaning</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Improve air quality by removing dust, allergens, and debris from your heating and cooling systems.</p>
+                    <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                     <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Daily trash removal</li>
+                                <li>Desk and surface sanitization</li>
+                                <li>Restroom maintenance</li>
+                                <li>Floor care and vacuuming</li>
+                                <li>Window cleaning (weekly)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">Custom Pricing</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Get Quote
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 14 -->
+            <div class="service-card hidden bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1513519245088-0e12902e5a38?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-broom text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Post-Construction Cleanup</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Thorough cleaning after construction or renovation projects to remove dust, debris, and construction residues.</p>
+                    <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                     <!-- Expanded Content (hidden by default) -->
+                    <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Dusting all surfaces</li>
+                                <li>Vacuuming and mopping floors</li>
+                                <li>Bathroom sanitization</li>
+                                <li>Kitchen deep cleaning</li>
+                                <li>Bed linen changes (optional)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">From $120</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service Card 15 -->
+            <div class="service-card hidden bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:scale-105">
+                <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-calendar-alt text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-blue-900">Recurring Maintenance</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Customized regular cleaning schedules to keep your space consistently clean and well-maintained.</p>
+                    <button class="text-blue-600 font-semibold hover:text-blue-800 transition flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                     <div class="learn-more-content overflow-hidden transition-all duration-300 max-h-0">
+                        <div class="pt-4 mt-4 border-t border-gray-200">
+                            <h4 class="font-bold text-gray-800 mb-2">Service Includes:</h4>
+                            <ul class="list-disc pl-5 text-gray-600 space-y-1 mb-4">
+                                <li>Daily trash removal</li>
+                                <li>Desk and surface sanitization</li>
+                                <li>Restroom maintenance</li>
+                                <li>Floor care and vacuuming</li>
+                                <li>Window cleaning (weekly)</li>
+                            </ul>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-blue-600">Custom Pricing</span>
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition">
+                                    Get Quote
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <!-- Add more service cards following the same pattern -->
+        </div>
+        
+        <div class="text-center mt-16">
+            <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full text-lg font-semibold transition">
+                View All Services
+            </button>
+        </div>
+    </div>
+</section>
+
+
+ <div class="sidebar fixed left-0 top-1/2 transform -translate-y-1/2 bg-white shadow-lg rounded-r-lg py-4 z-40 overflow-hiddenbg-opacity-120 backdrop-blur-sm rounded-r-xl border-r border-[#252525]">
+        <ul class="space-y-6">
+            <li class="flex items-center sidebar-icon">
+                <a href="#home" class="w-12 h-12 flex items-center justify-center text-blue-900 hover:bg-blue-50 rounded-full mx-2">
+                    <i class="fas fa-home text-xl"></i>
+                </a>
+                <span class="tooltip ml-2 text-blue-900 font-medium"><a href="#home">Home</a></span>
+            </li>
+            <li class="flex items-center sidebar-icon">
+                <a href="#about" class="w-12 h-12 flex items-center justify-center text-blue-900 hover:bg-blue-50 rounded-full mx-2">
+                    <i class="fas fa-info-circle text-xl"></i>
+                </a>
+                <span class="tooltip ml-2 text-blue-900 font-medium"><a href="#about">About</a></span>
+            </li>
+            <li class="flex items-center sidebar-icon">
+                <a href="#services" class="w-12 h-12 flex items-center justify-center text-blue-900 hover:bg-blue-50 rounded-full mx-2">
+                    <i class="fas fa-broom text-xl"></i>
+                </a>
+                <span class="tooltip ml-2 text-blue-900 font-medium"><a href="#services">Services</a></span>
+            </li>
+            <li class="flex items-center sidebar-icon">
+                <a href="#video" class="w-12 h-12 flex items-center justify-center text-blue-900 hover:bg-blue-50 rounded-full mx-2">
+                    <i class="fas fa-video text-xl"></i>
+                </a>
+                <span class="tooltip ml-2 text-blue-900 font-medium"><a href="#video">Video</a></span>
+            </li>
+            <li class="flex items-center sidebar-icon">
+                <a href="#why-us-popup" class="w-12 h-12 flex items-center justify-center text-blue-900 hover:bg-blue-50 rounded-full mx-2">
+                    <i class="fas fa-star text-xl"></i>
+                </a>
+                <span class="tooltip ml-2 text-blue-900 font-medium"><a href="#why-us">Why Us</a></span>
+            </li>
+            <li class="flex items-center sidebar-icon">
+                <a href="#booking" class="w-12 h-12 flex items-center justify-center text-blue-900 hover:bg-blue-50 rounded-full mx-2">
+                    <i class="fas fa-calendar-alt text-xl"></i>
+                </a>
+                <span class="tooltip ml-2 text-blue-900 font-medium"><a href="#booking">Booking</a></span>
+            </li>
+            <li class="flex items-center sidebar-icon">
+                <a href="#areas" class="w-12 h-12 flex items-center justify-center text-blue-900 hover:bg-blue-50 rounded-full mx-2">
+                    <i class="fas fa-map-marked-alt text-xl"></i>
+                </a>
+                <span class="tooltip ml-2 text-blue-900 font-medium"><a href="#areas">Areas</a></span>
+            </li>
+            <li class="flex items-center sidebar-icon">
+                <a href="#testimonials" class="w-12 h-12 flex items-center justify-center text-blue-900 hover:bg-blue-50 rounded-full mx-2">
+                    <i class="fas fa-comments text-xl"></i>
+                </a>
+                <span class="tooltip ml-2 text-blue-900 font-medium"><a href="#testimonials">Testimonials</a></span>
+            </li>
+            <li class="flex items-center sidebar-icon">
+                <a href="#partners" class="w-12 h-12 flex items-center justify-center text-blue-900 hover:bg-blue-50 rounded-full mx-2">
+                    <i class="fas fa-handshake text-xl"></i>
+                </a>
+                <span class="tooltip ml-2 text-blue-900 font-medium"><a href="#partners">Partners</a></span>
+            </li>
+            <li class="flex items-center sidebar-icon">
+                <a href="#contact" class="w-12 h-12 flex items-center justify-center text-blue-900 hover:bg-blue-50 rounded-full mx-2">
+                    <i class="fas fa-envelope text-xl"></i>
+                </a>
+                <span class="tooltip ml-2 text-blue-900 font-medium"><a href="#contact">Contact</a></span>
+            </li>
+        </ul>
+
+    </div>
+
+    <section id="gallery" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Header with CTA Icons -->
+        <div class="text-center mb-16">
+            <div class="flex justify-center gap-4 mb-6">
+                <!-- Free Quote Badge -->
+                <a href="#quote" class="flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full hover:bg-primary hover:text-white transition-all">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <span class="font-medium">Free Quote</span>
+                </a>
+                
+                <!-- Areas We Serve Badge -->
+                <a href="#locations" class="flex items-center gap-2 bg-secondary/10 text-secondary px-4 py-2 rounded-full hover:bg-secondary hover:text-white transition-all">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="font-medium">Areas We Serve</span>
+                </a>
+            </div>
+            
+            <span class="text-primary font-semibold text-lg tracking-wider">CLEANING IN ACTION</span>
+            <h2 class="text-4xl md:text-5xl font-bold mt-3 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                Our Cleaning Process
+            </h2>
+            <div class="w-24 h-1.5 bg-gradient-to-r from-primary to-secondary mx-auto mt-5 rounded-full"></div>
+        </div>
+        
+        <!-- Video Gallery Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Video 1 - Commercial Cleaning -->
+            <a href="https://www.youtube.com/watch?v=example1" target="_blank" class="block video-card group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl cursor-pointer transition-all duration-500">
+                <div class="aspect-video">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                         alt="Commercial office cleaning" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-[cubic-bezier(0.2,0.96,0.38,1.02)]">
+                </div>
+                <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+                    <div class="play-icon bg-white/20 backdrop-blur-lg w-20 h-20 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:bg-primary/80">
+                        <i class="fas fa-play text-white text-3xl ml-1"></i>
+                    </div>
+                </div>
+                <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 via-black/60 to-transparent">
+                    <div class="flex gap-2 mb-2">
+                        <span class="bg-primary/90 text-white text-xs px-3 py-1 rounded-full">Commercial</span>
+                        <span class="bg-white/10 text-white text-xs px-3 py-1 rounded-full backdrop-blur">3:24</span>
+                    </div>
+                    <h3 class="text-white font-bold text-xl">Office Deep Cleaning Process</h3>
+                    <p class="text-white/80 text-sm mt-1">Watch our team transform a busy office space overnight</p>
+                </div>
+            </a>
+            
+            <!-- Video 2 - Residential Cleaning -->
+            <a href="https://www.youtube.com/watch?v=example2" target="_blank" class="block video-card group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl cursor-pointer transition-all duration-500">
+                <div class="aspect-video">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                         alt="Residential home cleaning" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-[cubic-bezier(0.2,0.96,0.38,1.02)]">
+                </div>
+                <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+                    <div class="play-icon bg-white/20 backdrop-blur-lg w-20 h-20 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:bg-primary/80">
+                        <i class="fas fa-play text-white text-3xl ml-1"></i>
+                    </div>
+                </div>
+                <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 via-black/60 to-transparent">
+                    <div class="flex gap-2 mb-2">
+                        <span class="bg-secondary/90 text-white text-xs px-3 py-1 rounded-full">Residential</span>
+                        <span class="bg-white/10 text-white text-xs px-3 py-1 rounded-full backdrop-blur">2:45</span>
+                    </div>
+                    <h3 class="text-white font-bold text-xl">Move-In/Move-Out Special</h3>
+                    <p class="text-white/80 text-sm mt-1">Our comprehensive cleaning for rental properties</p>
+                </div>
+            </a>
+            
+            <!-- Video 3 - Specialized Cleaning -->
+            <a href="https://www.youtube.com/watch?v=example3" target="_blank" class="block video-card group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl cursor-pointer transition-all duration-500">
+                <div class="aspect-video">
+                    <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2034&q=80" 
+                         alt="Carpet cleaning service" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-[cubic-bezier(0.2,0.96,0.38,1.02)]">
+                </div>
+                <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+                    <div class="play-icon bg-white/20 backdrop-blur-lg w-20 h-20 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:bg-primary/80">
+                        <i class="fas fa-play text-white text-3xl ml-1"></i>
+                    </div>
+                </div>
+                <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 via-black/60 to-transparent">
+                    <div class="flex gap-2 mb-2">
+                        <span class="bg-emerald-500/90 text-white text-xs px-3 py-1 rounded-full">Carpet Care</span>
+                        <span class="bg-white/10 text-white text-xs px-3 py-1 rounded-full backdrop-blur">4:12</span>
+                    </div>
+                    <h3 class="text-white font-bold text-xl">Advanced Carpet Cleaning</h3>
+                    <p class="text-white/80 text-sm mt-1">Our eco-friendly steam cleaning removes even the toughest stains</p>
+                </div>
+            </a>
+        </div>
+        
+        <!-- CTA Section with Multiple Options -->
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Free Quote CTA -->
+            <div class="bg-gradient-to-br from-primary/5 to-white p-6 rounded-xl border border-primary/10 text-center">
+                <div class="w-14 h-14 bg-primary/10 text-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-file-invoice-dollar text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Get a Free Quote</h3>
+                <p class="text-gray-600 mb-4">No obligation estimate for your cleaning needs</p>
+                <a href="#quote" class="inline-block bg-primary text-white px-6 py-2 rounded-full font-medium hover:bg-primary/90 transition">
+                    Request Now
+                </a>
+            </div>
+            
+            <!-- Areas We Serve CTA -->
+            <div class="bg-gradient-to-br from-secondary/5 to-white p-6 rounded-xl border border-secondary/10 text-center">
+                <div class="w-14 h-14 bg-secondary/10 text-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-map-marker-alt text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Areas We Serve</h3>
+                <p class="text-gray-600 mb-4">Serving the greater metro area with pride</p>
+                <a href="#locations" class="inline-block bg-secondary text-white px-6 py-2 rounded-full font-medium hover:bg-secondary/90 transition">
+                    View Locations
+                </a>
+            </div>
+            
+            <!-- Video Gallery CTA -->
+            <div class="bg-gradient-to-br from-gray-100 to-white p-6 rounded-xl border border-gray-200 text-center">
+                <div class="w-14 h-14 bg-gray-100 text-gray-800 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-play-circle text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">More Videos</h3>
+                <p class="text-gray-600 mb-4">See our full collection of cleaning videos</p>
+                <a href="#full-gallery" class="inline-block bg-gray-800 text-white px-6 py-2 rounded-full font-medium hover:bg-gray-700 transition">
+                    View All
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
